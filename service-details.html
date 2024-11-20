@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Details - PortoFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">PortoFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portPortoFolio">PortPortoFolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Service Details</h1>
+        <p>Explore the details of our various services offered to help your business grow.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <!-- Service List (Sidebar with buttons) -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-box">
+              <h4>Services List</h4>
+              <div class="services-list">
+                <a href="#" class="service-btn" data-service="data-science"><i class="bi bi-arrow-right-circle"></i><span>Data Science</span></a>
+                <a href="#" class="service-btn" data-service="web-development"><i class="bi bi-arrow-right-circle"></i><span>Web Development</span></a>
+                <a href="#" class="service-btn" data-service="machine-learning"><i class="bi bi-arrow-right-circle"></i><span>Machine Learning</span></a>
+                <a href="#" class="service-btn" data-service="chatbot"><i class="bi bi-arrow-right-circle"></i><span>Chatbot Development</span></a>
+                <a href="#" class="service-btn" data-service="data-visualization"><i class="bi bi-arrow-right-circle"></i><span>Data Visualization</span></a>
+              </div>
+            </div><!-- End Services List -->
+            
+            <div class="service-box">
+              <h4>Download CV / Resume</h4>
+              <div class="download-catalog">
+                <a href="assets/files/your-resume.pdf" download><i class="bi bi-filetype-pdf"></i><span>Download CV (PDF)</span></a>
+                <a href="assets/files/your-resume.docx" download><i class="bi bi-file-earmark-word"></i><span>Download Resume (DOC)</span></a>
+              </div>
+            </div><!-- End Services List -->            
+
+            <div class="help-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-headset help-icon"></i>
+              <h4>Have a Question?</h4>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+62 8564 6452 991</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> 
+                <a href="mailto:mahameru0504@gmail.com?subject=Subject%20Here&body=Body%20Text%20Here">
+                  mahameru0504@gmail.com
+                </a>
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Service Details Content (Dynamically updated) -->
+          <div class="col-lg-8 ps-lg-5" id="service-details-content" data-aos="fade-up" data-aos-delay="200" style="display: none;">
+            <img id="service-image" src="assets/img/services.jpg" alt="Service Image" class="img-fluid services-img">
+            <h3 id="service-title">Select a Service to View Details</h3>
+            <p id="service-description">Detailed information will appear here when you select a service.</p>
+            <ul id="service-list">
+              <li><i class="bi bi-check-circle"></i> <span>Choose a service to see the list of features.</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">PortoFolio</h3>
+      <p>&copy; 2024 Mahameru. All Rights Reserved.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.instagram.com/mahamerua_"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mmahamerua/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/mahameru.mahameru.1217/"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/mahameruuu/"><i class="bi bi-github"></i></a>
+        <a href="https://medium.com/@mahameru0504"><i class="bi bi-medium"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const serviceLinks = document.querySelectorAll('.service-btn'); // Mengubah selector menjadi .service-btn untuk tautan
+    const serviceTitle = document.getElementById('service-title');
+    const serviceDescription = document.getElementById('service-description');
+    const serviceList = document.getElementById('service-list');
+    const serviceImage = document.getElementById('service-image');
+    const serviceDetailsContent = document.getElementById('service-details-content');
+
+    const servicesData = {
+      'data-science': {
+        title: 'Data Science & Analytics',
+        description: 'Solutions to help businesses understand patterns, trends, and opportunities from their data.',
+        list: [
+          'Analisis data mendalam untuk memahami perilaku pelanggan.',
+          'Visualisasi data interaktif menggunakan alat seperti Tableau atau Power BI.',
+          'Pembuatan model prediktif untuk mendukung strategi bisnis.'
+        ],
+        image: 'assets/img/data-science.jpg'
+      },
+      'web-development': {
+        title: 'Web Development',
+        description: 'Building modern and responsive websites with a user-centered design.',
+        list: [
+          'Pengembangan situs web menggunakan HTML, CSS, JavaScript, dan framework modern.',
+          'Desain situs web yang disesuaikan dengan kebutuhan bisnis.',
+          'Optimisasi situs web untuk kecepatan dan aksesibilitas.'
+        ],
+        image: 'assets/img/web-development.jpg'
+      },
+      'machine-learning': {
+        title: 'Machine Learning & AI',
+        description: 'Implementing machine learning models to automate tasks and enhance business operations.',
+        list: [
+          'Membangun model prediktif untuk analisis data yang kompleks.',
+          'Menerapkan algoritma Machine Learning seperti regresi, klasifikasi, dan clustering.',
+          'Mengintegrasikan model Machine Learning dengan aplikasi bisnis.'
+        ],
+        image: 'assets/img/machine-learning.jpg'
+      },
+      'chatbot': {
+        title: 'Chatbot Development',
+        description: 'Creating intelligent chatbots for customer service automation and user interaction.',
+        list: [
+          'Mendesain chatbot yang intuitif dan mudah digunakan.',
+          'Mengintegrasikan chatbot dengan berbagai platform komunikasi.',
+          'Meningkatkan pengalaman pengguna dan efisiensi layanan pelanggan.'
+        ],
+        image: 'assets/img/chatbot.jpg'
+      },
+      'data-visualization': {
+        title: 'Data Visualization',
+        description: 'Helping to present data in interactive and easy-to-understand graphical formats.',
+        list: [
+          'Menciptakan dasbor interaktif.',
+          'Menggunakan alat seperti Tableau, Power BI, atau D3.js untuk visualisasi data.',
+          'Menyajikan data kompleks dengan cara yang sederhana dan mudah dipahami.'
+        ],
+        image: 'assets/img/data-visualization.jpg'
+      }
+    };
+
+    function updateServiceContent(serviceKey) {
+      const serviceInfo = servicesData[serviceKey];
+
+      if (serviceInfo) {
+        serviceDetailsContent.style.display = 'block';
+
+        serviceTitle.textContent = serviceInfo.title;
+        serviceDescription.textContent = serviceInfo.description;
+
+        serviceList.innerHTML = '';
+        serviceInfo.list.forEach(item => {
+          const listItem = document.createElement('li');
+          listItem.innerHTML = `<i class="bi bi-check-circle"></i> <span>${item}</span>`;
+          serviceList.appendChild(listItem);
+        });
+
+        serviceImage.src = serviceInfo.image;
+      }
+    }
+
+    serviceLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); 
+
+      const serviceKey = this.getAttribute('data-service');
+      updateServiceContent(serviceKey);
+      });
+    });
+
+    updateServiceContent('data-science'); // This will show Data Science service by default
+});
+
+
+  </script>
+
+</body>
+
+</html>
